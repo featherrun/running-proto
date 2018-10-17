@@ -1,0 +1,17 @@
+﻿package proto.role
+
+@mod 2;
+
+class PRole {
+	String uid = 1;
+	String nickname = 2;
+	int level = 3;
+
+	PRoleTest[] arr = 11;
+	List<PRoleTest> list = 12;
+	Map<String,PRoleTest> map = 13;
+}
+
+class PRoleTest {
+    String test = 1;
+}

@@ -1,0 +1,47 @@
+﻿package proto.login
+
+@mod 1;
+
+@cmd (PLogin) = 101; //请求登录
+@msg (PLoginResult) = 102; //登录结果
+
+@cmd enterMainSceneCompleted() = 201; //进入主场景
+
+@rpc (PSomeRpc) = 501; //RPC测试
+
+@job call() = 601; //JOB测试
+
+
+class PLogin
+{
+	String name = 1; //登录名
+	String password = 2; //密钥
+	String platform = 3; //所属平台
+}
+
+class PLoginResult
+{
+	byte result = 1; //登录结果, 0-成功, 1-失败
+	PRole roleData = 2;
+}
+
+const LoginResultType //登录结果
+{
+	byte success = 0;
+	byte fail = 1;
+}
+
+enum LoginPlatform
+{
+	empty = 0;
+	qq = 1;
+	wechat = 2;
+}
+
+class PSomeRpc //测试
+{
+	String some = 1;
+	List<String> someList = 2;
+	Map<Integer,String> someMap = 3;
+	int[] someArray = 4;
+}

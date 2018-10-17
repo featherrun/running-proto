@@ -1,0 +1,50 @@
+############P
+/**
+ * Created by running-proto-builder
+ * __time__
+ */
+namespace __package__ {
+__ns_list__
+	export const PacketMod = {
+__PacketMod__
+	};
+
+    /*
+	export const PacketMethod = {
+__PacketMethod__
+	};
+	*/
+
+    export const Action = {
+__actions__
+    };
+}
+P############
+
+
+############N
+    export namespace __ns__ {
+__classes__
+    }
+N############
+
+
+############CLASS
+		export class __class__ { //__desc__
+            static _ID:number = __ID__;
+__fields__
+		}
+CLASS############
+
+
+############CONST
+		export const __class__ = { //__desc__
+__fields__
+		};
+CONST############
+
+############ENUM
+		export enum __class__ { //__desc__
+__fields__
+		}
+ENUM############

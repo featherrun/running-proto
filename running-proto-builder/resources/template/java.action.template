@@ -1,0 +1,18 @@
+/**
+ * Created by running-proto-builder
+ */
+package __package__;
+
+import java.util.concurrent.Callable;
+
+public enum __class__ {
+__fields__
+	;
+
+	public final int action;
+	public final Callable<Object> callable;
+	__class__(int action, Callable<Object> callable) {
+		this.action = action;
+		this.callable = callable;
+	}
+}

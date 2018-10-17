@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="META-INF"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/running-core-java"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/running-proto-java"/>
+	<classpathentry kind="output" path="out/test/running-proto-builder"/>
+</classpath>
