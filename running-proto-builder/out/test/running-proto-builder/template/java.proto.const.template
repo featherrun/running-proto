@@ -1,9 +1,0 @@
-/**
- * Created by running-proto-builder
- */
-package __package__;
-
-/**__desc__*/
-public final class __class__ {
-__fields__
-}

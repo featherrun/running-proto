@@ -16,9 +16,9 @@
 
 package running.proto.builder;
 
-import running.core.ClassBuilder;
-import running.core.ILogger;
+import running.core.Logger;
 import running.core.Running;
+import running.help.ClassBuilder;
 import running.util.FileUtils;
 import running.util.StringUtils;
 
@@ -28,7 +28,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Proto2JavaAction {
-	final ILogger logger = Running.getLogger(Proto.class);
+	final Logger logger = Running.getLogger(Proto.class);
 	final FileUtils fileUtils = Running.get(FileUtils.class);
 	final StringUtils stringUtils = Running.get(StringUtils.class);
 

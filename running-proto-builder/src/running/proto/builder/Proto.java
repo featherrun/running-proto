@@ -16,7 +16,7 @@
 
 package running.proto.builder;
 
-import running.core.ILogger;
+import running.core.Logger;
 import running.core.Running;
 import running.proto.PacketType;
 import running.util.FileUtils;
@@ -39,7 +39,7 @@ public class Proto {
 	final static Pattern reg_mod = Pattern.compile("@mod\\s+([0-9]+)", Pattern.CASE_INSENSITIVE);
 	final static Pattern reg_action = Pattern.compile("@([a-z]+)\\s+([a-z0-9_]*)\\s?\\(([a-z0-9_]*)\\)\\s?=\\s?([0-9]+);(.*)", Pattern.CASE_INSENSITIVE);
 
-	static ILogger logger = Running.getLogger(Proto.class);
+	static Logger logger = Running.getLogger(Proto.class);
 	static FileUtils fileUtils = Running.get(FileUtils.class);
 	static TimeUtils timeUtils = Running.get(TimeUtils.class);
 

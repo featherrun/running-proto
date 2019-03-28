@@ -16,7 +16,7 @@
 
 package running.proto.builder;
 
-import running.core.ILogger;
+import running.core.Logger;
 import running.core.Running;
 import running.proto.PacketType;
 import running.util.FileUtils;
@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Proto2Json {
-	final ILogger logger = Running.getLogger(Proto.class);
+	final Logger logger = Running.getLogger(Proto.class);
 	final FileUtils fileUtils = Running.get(FileUtils.class);
 	final JsonUtils jsonUtils = Running.get(JsonUtils.class);
 

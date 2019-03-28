@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import running.core.ILogger;
+import running.core.Logger;
 import running.core.PrintLogger;
 import running.core.Running;
 import running.proto.builder.*;
@@ -22,7 +22,7 @@ import running.util.*;
 
 public class Main {
 	static {
-		Running.set(ILogger.class, new PrintLogger());
+		Running.set(Logger.class, new PrintLogger());
 		Running.set(FileUtils.class, new FileUtils());
 		Running.set(StringUtils.class, new StringUtils());
 		Running.set(TimeUtils.class, new TimeUtils());
@@ -31,7 +31,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		final ILogger logger = Running.getLogger(Main.class);
+		final Logger logger = Running.getLogger(Main.class);
 		final PropertiesUtils propertiesUtils = Running.get(PropertiesUtils.class);
 
 		propertiesUtils.load(args);
